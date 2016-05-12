@@ -15,8 +15,14 @@ var fs = require('fs');
 /* Escuchar al propio gulpfile */
 
 
+gulp.task( 'concat-html', function (){
+    gulp.src('html/*.html')
+      .pipe(concat('todo.html'))
+      .pipe(gulp.dest('html/build'))
+})
 
-gulp.task( 'demo', function (){
+
+gulp.task( 'concat-js', function (){
     gulp.src('js/source/*.js')
       .pipe(concat('todo.js'))
       .pipe(uglify())
