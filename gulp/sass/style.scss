@@ -1,0 +1,27 @@
+$$gris-oscuro: #400;
+
+.container{
+	display: flex;
+
+	.item{
+		background-color: $gris-oscuro;
+	}
+}
+
+article{
+	background-color: #ccc;
+	article h2 {
+			margin: 10px 0;
+			padding: 0;
+
+	}
+	.cosa{
+		margin: 0px;
+	}
+}
+
+.negro{
+	color: red;
+}
+
+/* hola prueba */
